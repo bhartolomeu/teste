@@ -7,20 +7,28 @@ class Criar_Label:
         self.label["text"]=texto
         self.label["font"]=fonte
         self.label["bg"]=fundo
-        
         self.label.place(x=abcissa,y=ordenada)
 
-#####Esta classe está fora de uso
-##class Criar_Entry:
-##    def __init__(self,root2,abcissa,ordenada,fonte,fundo,segredo):
-##        self.entry=Entry(root2,font=fonte)
-##        self.entry.place(x=abcissa,y=ordenada)
-##        if segredo:
-##            self.entry["show"]="*"
+class Criar_Label_Titulo:
+    def __init__(self,root2,texto,fonte,fundo):
+        self.titulo=Label(root2)
+        self.titulo["text"]=texto
+        self.titulo["font"]=fonte
+        self.titulo["bg"]=fundo
+        self.titulo.pack()
+
+##Esta classe está fora de uso
+class Criar_Entry:
+    def __init__(self,root2,abcissa,ordenada,fonte,fundo,segredo):
+        self.entry=Entry(root2,font=fonte)
+        self.entry.place(x=abcissa,y=ordenada)
+        if segredo:
+            self.entry["show"]="*"
 #####A seguinte tentativa de solução resultou num loop infinito
-####    def get(self):
-####        resposta=self.get()
-####        return resposta
+class cap:
+    def capturar(Criar_Entry):
+        resposta=super().get()
+        return resposta
 
 class Criar_Button:
     def __init__(self,root2,texto,fonte,fundo,comando):
@@ -47,5 +55,3 @@ class Criar_Spinbox:
     def __init__(self,root2,origem,fim,abcissa,ordenada):
         self.spinbox=Spinbox(root2,from_=origem,to=fim)
         self.spinbox.place(x=abcissa,y=ordenada)
-
-        
