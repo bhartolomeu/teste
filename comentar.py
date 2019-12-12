@@ -23,9 +23,6 @@ while voltar:
         titulo=titulo+resto
         
         comentario=titulo+texto
-        print("-"*4)
-        print("Este é o comentário:",comentario)
-        print("-"*4)
         
         comando="sudo git commit -m '"+comentario+"'"
         print(os.system(comando))
