@@ -9,6 +9,7 @@ class Criar_Label:
         self.label["bg"]=fundo
         self.label.place(x=abcissa,y=ordenada)
 
+#Será que deveríamos fazer polimorfismo aqui e fazer da classe Criar_Label a classe mãe?
 class Criar_Label_Titulo:
     def __init__(self,root2,texto,fonte,fundo):
         self.titulo=Label(root2)
@@ -17,18 +18,12 @@ class Criar_Label_Titulo:
         self.titulo["bg"]=fundo
         self.titulo.pack()
 
-##Esta classe está fora de uso
 class Criar_Entry:
     def __init__(self,root2,abcissa,ordenada,fonte,fundo,segredo):
         self.entry=Entry(root2,font=fonte)
         self.entry.place(x=abcissa,y=ordenada)
         if segredo:
             self.entry["show"]="*"
-#####A seguinte tentativa de solução resultou num loop infinito
-class cap:
-    def capturar(Criar_Entry):
-        resposta=super().get()
-        return resposta
 
 class Criar_Button:
     def __init__(self,root2,texto,fonte,fundo,comando):
