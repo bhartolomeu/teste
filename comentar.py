@@ -7,6 +7,7 @@ while voltar:
     espaco=" "*45+"_"*70
     print(espaco)
     titulo=input("Por favor insira um título de até 70 dígitos:")
+    print(" ")
     texto=input("Insira o corpo do texto: ")
     
     contar=0

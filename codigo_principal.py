@@ -1,31 +1,32 @@
 from tkinter import *
 from criar_widgets import *
+from janela import *
 
-def imprimir(root,login,senha):
-    if login=="" and senha=="":
-        
+#def imprimir(root,login,senha):
+ #   if login=="" and senha=="":
+  #      pass        
     
-def menu(fonte,fundo,xy):
-    root=Tk()
-    root["bg"]=fundo
-       
-    #Título da janela
-    titulo=Criar_Label_Titulo(root,"MENU",fonte,fundo)
+#def menu(fonte,fundo,xy):
+#    root=Tk()
+#    root["bg"]=fundo
+#       
+#    #Título da janela
+#    titulo=Criar_Label_Titulo(root,"MENU",fonte,fundo)
 
     #NOME
-    nome=Criar_Label(root,"NOME",xy[0],xy[1],fonte,fundo)
+#    nome=Criar_Label(root,"NOME",xy[0],xy[1],fonte,fundo)
 
     #A seguinte classe está fora de uso
-    entrar_nome=Criar_Entry(root,xy[0]+50,xy[1],fonte,fundo,False)
+ #   entrar_nome=Criar_Entry(root,xy[0]+50,xy[1],fonte,fundo,False)
 
     #SENHA
-    senha=Criar_Label(root,"SENHA",xy[0],xy[1]+30,fonte,fundo)
-    entrar_senha=Criar_Entry(root,xy[0]+50,xy[1]+30,fonte,fundo,True)
+  #  senha=Criar_Label(root,"SENHA",xy[0],xy[1]+30,fonte,fundo)
+   # entrar_senha=Criar_Entry(root,xy[0]+50,xy[1]+30,fonte,fundo,True)
 
-    botao=Criar_Button(root,"INSERIR NOME",fonte,fundo,lambda:imprimir(root,entrar_nome.entry.get(),entrar_senha.entry.get()))
+    #botao=Criar_Button(root,"INSERIR NOME",fonte,fundo,lambda:imprimir(root,entrar_nome.entry.get(),entrar_senha.entry.get()))
 
-   root.geometry('400x150')
-    root.mainloop()
+#    root.geometry('400x150')
+#    root.mainloop()
 
 ##    #revisar esta parte
 ##    var = StringVar()
@@ -33,5 +34,5 @@ def menu(fonte,fundo,xy):
 ##    e_=Criar_RadioButton(root,fonte,fundo,"Macho♂",xy[0],xy[1]+80,var.set("hello"))
 
 ##    f=Criar_Spinbox(root,1,31,xy[0],xy[1]+150)
-
-menu(["Roboto",10],"LavenderBlush",[1,40])
+menu=Autenticar(["Roboto",10],"LavenderBlush",[1,40],('400x150'),"MENU")
+#menu(["Roboto",10],"LavenderBlush",[1,40])
