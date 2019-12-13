@@ -1,6 +1,6 @@
 #from tkinter import *
 #from criar_widgets import *
-from janela import *
+from janela import Janelas,Autenticar
 
-menu=Janelas(["Roboto",10],"LavenderBlush",[1,40],('400x150'),"MENU",True)
+menu=Autenticar(["Roboto",10],"LavenderBlush",[1,40],('250x170'),"MENU")
 
