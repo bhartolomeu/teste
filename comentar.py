@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
-import commands
+#import commands
 
 voltar=True
 while voltar:
@@ -31,7 +31,7 @@ while voltar:
         voltar=False
 print("""Agora vamos empurrar tudo.
 Empurrando...""")
-print(" 
-Empurrado!")
+print(""" 
+Empurrado!""")
 print(os.system("sudo git push"))
 
