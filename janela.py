@@ -7,17 +7,17 @@ class Janelas:
         #Caso seja a janela mãe
         if original:
             #Esta é a variável da janela mãe
-     	    self.root = Tk()
+     	      self.root = Tk()
 
-	    #Caso seja uma janela filha
-	    else:
+	#Caso seja uma janela filha
+	else:
             #Esta é a variável da janela filha
-	        self.root= Toplevel()
+	    self.root= Toplevel()
         ###############FIM DO IF##############
-        #Esta é a cor de fundo da janela
+    #Esta é a cor de fundo da janela
 	self.root["bg"]=fundo
-        #Este é o título
-        self.titulo=Criar_Label_Titulo(self.root,titulo,fonte,fundo)
+    #Este é o título
+    self.titulo=Criar_Label_Titulo(self.root,titulo,fonte,fundo)
 
 class Autenticar(Janelas):
     def __init__(self,fonte,fundo,xy,tela,titulo):
