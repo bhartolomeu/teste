@@ -1,6 +1,6 @@
-#from tkinter import *
-#from criar_widgets import *
-from janela import Janelas, Autenticar
+#!/usr/bin/python3
+from janela import *
 
-menu=Autenticar(["Roboto",10],"LavenderBlush",[1,40],('250x170'),"MENU")
+menu=Menu(["Roboto",10],"LavenderBlush",[1,40],('250x170'),"MENU")
+#logar=Autenticar(["Roboto",10],"LavenderBlush",[1,40],('250x170'),"AUTENTICAR")
 

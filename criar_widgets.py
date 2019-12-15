@@ -19,7 +19,7 @@ class Criar_Label_Titulo:
          self.titulo.pack()
 
 class Criar_Entry:
-    def __init__(self,root2,abcissa,ordenada,fonte,fundo,segredo):
+    def __init__(self,root2,abcissa,ordenada,fonte,segredo):
          self.entry=Entry(root2,font=fonte)
          self.entry.place(x=abcissa,y=ordenada)
          if segredo:
